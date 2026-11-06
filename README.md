@@ -1,5 +1,5 @@
 # Maram AI — Experimental Voice Assistant
-
+            Created by : Ayoub Saadaoui
 Maram AI is an experimental AI assistant developed as a beta project to explore natural language interaction, voice-based communication, and immersive 3D experiences.
 
 The project integrates the Ollama API to provide AI-powered conversational capabilities, alongside a 3D avatar and voice interaction features designed to create a more interactive assistant experience.
