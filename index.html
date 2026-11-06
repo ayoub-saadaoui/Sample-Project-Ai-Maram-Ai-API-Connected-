@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maram Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+
+    <div class="brand">
+        <div class="brand-icon">M</div>
+
+        <div class="brand-text">
+            <h1>Maram <span>Assistant</span></h1>
+            <p>De Mr Ayoub Saadaoui (Zenta)</p>
+        </div>
+
+        <div class="brand-status">
+            <span class="status-light"></span>
+            ONLINE
+        </div>
+    </div>
+
+    <!-- 3D Character -->
+    <div id="avatar3d" aria-label="Maram 3D Character">
+        <div id="maramSpeechBubble" class="maram-speech-bubble">
+            <span id="maramSpeechText"></span>
+        </div>
+    </div>
+
+    <!-- Chat Interface -->
+    <section class="chat-panel">
+
+        <div class="chat-header">
+            <div class="chat-avatar">M</div>
+            <div>
+                <h2>Maram AI</h2>
+                <p><span class="chat-online"></span> Ready to talk</p>
+            </div>
+        </div>
+
+        <div id="chatMessages" class="chat-messages">
+            <div class="message maram-message">
+                <div class="message-name">Maram</div>
+                <div class="message-bubble">
+                    Salem! Ena Maram ❤️ Kifeh najem n3awnek?
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-input-area">
+            <input
+                type="text"
+                id="chatInput"
+                placeholder="Write a message to Maram..."
+                autocomplete="off"
+            >
+
+            <button id="voiceChatBtn" class="voice-chat-btn"
+                    title="Turn voice on or off">
+                🔊
+            </button>
+
+            <button id="sendBtn" class="send-btn">
+                ➤
+            </button>
+        </div>
+
+    </section>
+
+    <!-- MAR﻿AM VOICE ENABLE BUTTON -->
+    <button id="maramVoiceToggle" class="maram-voice-toggle" type="button">
+        VOICE ENABLE
+    </button>
+    <!-- JOIN SOFTWARE -->
+    <div class="join-controls">
+
+        <button id="joinSoftwareBtn" type="button">
+            JOIN SOFTWARE
+        </button>
+
+        <button id="setPasswordBtn" type="button">
+            JOIN NEW LIFE
+        </button>
+
+    </div>
+    <!-- NEW LIFE PAGE -->
+    <div id="newLifePage" class="new-life-page">
+        <button id="backToMaramBtn" type="button">
+            ← BACK
+        </button>
+        <button id="aimbotToggleBtn" type="button" aria-pressed="false">
+            AIMBOT : OFF
+        </button>
+        <!-- SYSTEM OVERVIEW -->
+        <section class="system-panel">
+
+            <div class="system-title">SYSTEM OVERVIEW</div>
+
+            <div class="system-metrics">
+
+                <div class="metric">
+                    <span>CPU</span>
+                    <div class="metric-circle" style="--value:23%">
+                        <strong id="cpuUsage">23%</strong>
+                    </div>
+                    <small>3.2 GHz</small>
+                </div>
+
+                <div class="metric">
+                    <span>RAM</span>
+                    <div class="metric-circle" style="--value:65%">
+                        <strong id="ramUsage">65%</strong>
+                    </div>
+                    <small>10.3 / 15.6 GB</small>
+                </div>
+
+                <div class="metric">
+                    <span>DISK</span>
+                    <div class="metric-circle" style="--value:42%">
+                        <strong id="diskUsage">42%</strong>
+                    </div>
+                    <small>256 / 512 GB</small>
+                </div>
+
+                <div class="metric">
+                    <span>NET</span>
+                    <div class="metric-circle" style="--value:68%">
+                        <strong id="networkUsage">68%</strong>
+                    </div>
+                    <small id="networkStatus">256 / 512 GB</small>
+                </div>
+
+            </div>
+
+        </section>
+        <button id="connectNewLifeBtn" type="button">
+            CONNECT TO NEW LIFE
+        </button>
+
+    </div>
+    <!-- PASSWORD WINDOW -->
+    <div id="passwordModal" class="password-modal">
+
+        <div class="password-box">
+
+            <h2 id="passwordTitle">JOIN TO LOBBY MARAM</h2>
+
+            <p id="passwordMessage">Enter your password</p>
+
+            <input
+                type="password"
+                id="passwordInput"
+                placeholder="Enter Password"
+            >
+
+            <input
+                type="password"
+                id="confirmPasswordInput"
+                placeholder="Confirm New Password"
+                style="display:none;"
+            >
+
+            <p id="passwordError"></p>
+
+            <div class="password-actions">
+                <button id="passwordConfirmBtn">CONFIRM</button>
+                <button id="passwordCancelBtn">CANCEL</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script type="module" src="main.js"></script>
+<script type="module" src="chat.js"></script>
+<script type="module" src="security.js"></script>
+
+</body>
+</html>
